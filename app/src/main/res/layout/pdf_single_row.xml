@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+<ImageView
+    android:id="@+id/pdfImg"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/pdf_icon"/>
+    <TextView
+        android:id="@+id/pdfHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is header text"
+        android:layout_toRightOf="@+id/pdfImg"
+        android:layout_marginLeft="4dp"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/pdfHeader"
+        android:orientation="horizontal"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/pdfImg">
+
+        <ImageView
+            android:id="@+id/pdfBook"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/views"/>
+        <TextView
+            android:id="@+id/pdfBookViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="300k"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/pdfLike"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/like"/>
+        <TextView
+            android:id="@+id/pdfLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="5k"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/pdfDislike"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/dislike"/>
+        <TextView
+            android:id="@+id/pdfDislikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="120"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
